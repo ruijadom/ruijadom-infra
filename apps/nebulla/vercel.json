@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "cd ../.. && npx turbo run build --filter=nebulla...",
+  "devCommand": "next dev --port $PORT",
+  "installCommand": "yarn install",
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD ./",
+  "outputDirectory": "out"
+}

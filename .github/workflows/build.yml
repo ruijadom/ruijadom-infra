@@ -32,8 +32,8 @@ jobs:
         run: |
           cd apps/nebulla
           lhci autorun --config=lighthouse.config.js
-        env:
-          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+          env:
+            LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
       - name: Move output of website
         run: |
           mkdir -p out

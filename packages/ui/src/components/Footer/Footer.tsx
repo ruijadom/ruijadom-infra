@@ -3,8 +3,6 @@ import type { FunctionComponent } from "react";
 
 import { ButtonLink } from "../Button";
 import { Container } from "../Container";
-import { Logo } from "../Logo";
-import type { NavigationLink } from "../Navigation/types";
 
 export interface FooterProps {
   links?: readonly NavigationLink[];
@@ -17,7 +15,6 @@ export const Footer: FunctionComponent<FooterProps> = (props) => {
     <footer>
       <Container>
         <div className="py-16">
-          <Logo className="mx-auto h-10 w-auto" />
           <nav aria-label="quick links" className="mt-10 text-sm">
             <div className="xs:flex-row flex flex-col justify-center gap-x-6">
               {links.map(({ classNameMobile: _classNameMobile, ...link }) => (
@@ -30,7 +27,7 @@ export const Footer: FunctionComponent<FooterProps> = (props) => {
           <nav aria-label="social" className="flex gap-x-6">
             <Link
               aria-label="Ruijadom on GitHub"
-              href="https://github.com/myopic-design"
+              href="https://github.com/ruijadom"
               className="group"
             >
               <svg
@@ -42,21 +39,8 @@ export const Footer: FunctionComponent<FooterProps> = (props) => {
               </svg>
             </Link>
             <Link
-              aria-label="Ruijadom on Mastodon"
-              href="https://hachyderm.io/@myopic-design"
-              className="group"
-            >
-              <svg
-                aria-hidden="true"
-                className="group-hocus:fill-neutral-600 dark:group-hocus:fill-neutral-400 h-6 w-6 fill-neutral-500"
-                viewBox="0 0 448 512"
-              >
-                <path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z" />
-              </svg>
-            </Link>
-            <Link
               aria-label="Ruijadom on Twitter"
-              href="https://twitter.com/myopic-design"
+              href="https://twitter.com/ruijadom"
               className="group"
             >
               <svg

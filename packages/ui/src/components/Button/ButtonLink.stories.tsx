@@ -15,7 +15,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     children: "Link",
-    href: "https://myopic.design/",
+    href: "https://ruijadom.com",
     target: "_blank",
   },
 };

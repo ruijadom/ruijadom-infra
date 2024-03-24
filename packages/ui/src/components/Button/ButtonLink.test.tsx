@@ -11,6 +11,6 @@ describe("Link", () => {
 
     const link = screen.getByRole("link", { name: "Link" });
 
-    expect(link).toHaveAttribute("href", "https://myopic.design/");
+    expect(link).toHaveAttribute("href", "https://ruijadom.com");
   });
 });

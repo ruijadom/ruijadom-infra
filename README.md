@@ -18,10 +18,6 @@ This is a monorepo template using:
 - 🏎️ [Turborepo](https://turbo.build/repo)
 - 👷 [Github Actions](https://github.com/features/actions)
 
-## What's inside?
-
-This monorepo includes a few apps and packages.
-
 ### Apps and Packages
 
 - `apps/nebulla`: a Next.js app with Tailwind CSS

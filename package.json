@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "ruijadom-infra",
-  "version": "0.0.0-development",
+  "version": "1.7.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/ruijadom/ruijadom-infra.git"
@@ -21,8 +21,7 @@
     "fix:eslint": "eslint --fix .",
     "fix:prettier": "prettier --plugin-search-dir=. --write .",
     "fix": "run-s fix:*",
-    "prepare": "husky install",
-    "semantic-release": "semantic-release --branches main"
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*": "prettier --ignore-unknown --write",
@@ -53,8 +52,7 @@
     "prettier-plugin-tailwindcss": "0.4.1",
     "storybook": "7.1.1",
     "turbo": "1.8.3",
-    "typescript": "5.1.6",
-    "semantic-release": "^24.0.0"
+    "typescript": "5.1.6"
   },
   "packageManager": "pnpm@8.6.10"
 }

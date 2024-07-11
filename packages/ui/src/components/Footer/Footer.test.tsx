@@ -51,16 +51,16 @@ describe("Footer", () => {
       withinNavSocial.getByRole("link", {
         name: "Ruijadom on GitHub",
       }),
-    ).toHaveAttribute("href", "https://github.com/myopic-design");
+    ).toHaveAttribute("href", "https://github.com/ruijadom");
     expect(
       withinNavSocial.getByRole("link", {
         name: "Ruijadom on Mastodon",
       }),
-    ).toHaveAttribute("href", "https://hachyderm.io/@myopic-design");
+    ).toHaveAttribute("href", "https://hachyderm.io/@ruijadom");
     expect(
       withinNavSocial.getByRole("link", {
         name: "Ruijadom on Twitter",
       }),
-    ).toHaveAttribute("href", "https://twitter.com/myopic-design");
+    ).toHaveAttribute("href", "https://twitter.com/ruijadom");
   });
 });

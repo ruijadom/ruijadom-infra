@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.0.0 (2024-07-11)
+
+
+### Features
+
+* **packages:** add react-native typescript config ([0616793](https://github.com/ruijadom/ruijadom-infra/commit/0616793501ea7cc0ffd584c633e31842bc761dd0))
+
+
+### Bug Fixes
+
+* **tests:** change url ([595c611](https://github.com/ruijadom/ruijadom-infra/commit/595c6116df4bd754c6acf6f61909ab286046be05))
+
 ## [1.7.0](https://github.com/myopic-design/monorepo-nextjs-tailwindcss-template/compare/v1.6.25...v1.7.0) (2023-07-28)
 
 

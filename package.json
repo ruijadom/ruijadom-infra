@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "ruijadom-infra",
-  "version": "1.7.0",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/ruijadom/ruijadom-infra.git"

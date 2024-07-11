@@ -3,6 +3,7 @@ import type { FunctionComponent } from "react";
 
 import { ButtonLink } from "../Button";
 import { Container } from "../Container";
+import type { NavigationLink } from "../Navigation/types";
 
 export interface FooterProps {
   links?: readonly NavigationLink[];

@@ -24,7 +24,7 @@ runs:
         node-version: ${{ inputs.node-version }}
         cache: "pnpm"
     - name: Install dependencies
-      run: pnpm install
+      run: pnpm install --no-frozen-lockfile
       shell: bash
     - name: Install Playwright browsers
       run: pnpm playwright install --with-deps

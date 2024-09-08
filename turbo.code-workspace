@@ -5,26 +5,26 @@
     { "path": "packages/ui", "name": "packages/ui" },
     { "path": "packages/utils", "name": "packages/utils" },
     {
-      "path": "packages/@ruijadom/eslint-config-custom",
-      "name": "packages/@ruijadom/eslint-config-custom"
+      "path": "packages/config/eslint-config-custom",
+      "name": "packages/config/eslint-config-custom"
     },
-    { "path": "packages/@ruijadom/jest-config", "name": "packages/@ruijadom/jest-config" },
-    { "path": "packages/@ruijadom/next-config", "name": "packages/@ruijadom/next-config" },
+    { "path": "packages/config/jest-config", "name": "packages/config/jest-config" },
+    { "path": "packages/config/next-config", "name": "packages/config/next-config" },
     {
-      "path": "packages/@ruijadom/playwright-config",
-      "name": "packages/@ruijadom/playwright-config"
-    },
-    {
-      "path": "packages/@ruijadom/storybook-config",
-      "name": "packages/@ruijadom/storybook-config"
+      "path": "packages/config/playwright-config",
+      "name": "packages/config/playwright-config"
     },
     {
-      "path": "packages/@ruijadom/tailwindcss-config",
-      "name": "packages/@ruijadom/tailwindcss-config"
+      "path": "packages/config/storybook-config",
+      "name": "packages/config/storybook-config"
     },
     {
-      "path": "packages/@ruijadom/typescript-config",
-      "name": "packages/@ruijadom/typescript-config"
+      "path": "packages/config/tailwindcss-config",
+      "name": "packages/config/tailwindcss-config"
+    },
+    {
+      "path": "packages/config/typescript-config",
+      "name": "packages/config/typescript-config"
     },
     { "path": ".", "name": "root" }
   ],
@@ -37,7 +37,7 @@
   },
   "settings": {
     "editor.codeActionsOnSave": {
-      "source.fixAll": true
+      "source.fixAll": "explicit"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,

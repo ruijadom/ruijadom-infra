@@ -4,7 +4,8 @@
     "baseUrl": "./src",
     "paths": {
       "@/*": ["*"]
-    }
+    },
+    "forceConsistentCasingInFileNames": true
   },
   "include": ["next-env.d.ts", "src", "e2e"],
   "exclude": ["dist", "node_modules"]

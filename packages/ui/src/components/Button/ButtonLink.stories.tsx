@@ -3,7 +3,6 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { ButtonLink } from "./ButtonLink";
 
 const meta = {
-  // eslint-disable-next-line storybook/no-title-property-in-meta
   title: "Components/ButtonLink",
   component: ButtonLink,
 } satisfies Meta<typeof ButtonLink>;

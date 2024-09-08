@@ -13,8 +13,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     leftLinks: [
-      { children: "Features", href: "#features", variant: "text" },
-      { children: "Testimonials", href: "#testimonials", variant: "text" },
+      { children: "Services", href: "#features", variant: "text" },
       { children: "Pricing", href: "#pricing", variant: "text" },
     ],
     rightLinks: [

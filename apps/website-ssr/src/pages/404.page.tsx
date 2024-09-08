@@ -11,7 +11,7 @@ export default function NotFound() {
 
       <Container>
         <main className="pb-8 pt-16 sm:pt-24">
-          <h1 className="mx-auto text-center text-6xl font-extrabold text-neutral-900 dark:text-white sm:text-7xl lg:text-8xl">
+          <h1 className="mx-auto text-center text-6xl font-extrabold text-neutral-900 sm:text-7xl lg:text-8xl dark:text-white">
             Page Not Found
           </h1>
           <div className="mx-auto mt-5 text-center text-neutral-900 dark:text-white">

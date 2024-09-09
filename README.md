@@ -28,14 +28,14 @@ This monorepo includes a few apps and packages.
 - `apps/website`: another Next.js app with Tailwind CSS
 - `packages/ui`: a stub React component library with Tailwind CSS, shared by both `website-ssr` and `website` apps
 - `packages/utils`: utilities shared by both `website-ssr` and `website` apps
-- `packages/@ruijadom/eslint-config-custom`: shared ESLint configuration
-- `packages/@ruijadom/jest-config`: shared Jest configuration
-- `packages/@ruijadom/lighthouse-config`: shared Lighthouse configuration
-- `packages/@ruijadom/next-config`: shared Next.js configuration
-- `packages/@ruijadom/playwright-config`: shared Playwright configuration
-- `packages/@ruijadom/storybook-config`: shared Storybook configuration
-- `packages/@ruijadom/tailwindcss-config`: shared Tailwind CSS configuration
-- `packages/@ruijadom/typescript-config`: shared `tsconfig.json` files
+- `packages/config/eslint-config-custom`: shared ESLint configuration
+- `packages/config/jest-config`: shared Jest configuration
+- `packages/config/lighthouse-config`: shared Lighthouse configuration
+- `packages/config/next-config`: shared Next.js configuration
+- `packages/config/playwright-config`: shared Playwright configuration
+- `packages/config/storybook-config`: shared Storybook configuration
+- `packages/config/tailwindcss-config`: shared Tailwind CSS configuration
+- `packages/config/typescript-config`: shared `tsconfig.json` files
 
 ## Using this template
 

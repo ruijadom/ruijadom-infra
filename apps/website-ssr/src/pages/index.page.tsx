@@ -1,8 +1,12 @@
-import type { GetServerSideProps, InferGetServerSidePropsType } from "next";
+import type { GetServerSideProps } from "next";
 import Head from "next/head";
 import { Container } from "ui";
 
-export default function Home({ pwa }: InferGetServerSidePropsType<typeof getServerSideProps>) {
+interface HomeProps {
+  pwa: boolean;
+}
+
+export default function Home({ pwa }: HomeProps) {
   return (
     <>
       <Head>
@@ -21,15 +25,14 @@ export default function Home({ pwa }: InferGetServerSidePropsType<typeof getServ
               Turbo Monorepo
             </span>
           </h1>
+          {pwa && <p className="text-center text-green-500">PWA is enabled</p>}
         </main>
       </Container>
     </>
   );
 }
 
-export const getServerSideProps: GetServerSideProps<{
-  pwa: boolean;
-}> = async () => {
+export const getServerSideProps: GetServerSideProps<HomeProps> = async () => {
   await new Promise((resolve) => setTimeout(resolve, 1000));
 
   return { props: { pwa: true } };

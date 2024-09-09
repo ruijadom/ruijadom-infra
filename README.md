@@ -42,7 +42,7 @@ This monorepo includes a few apps and packages.
 Run the following command:
 
 ```
-npx degit markkos89/turbo-monorepo-template my-monorepo
+npx degit ruijadom/ruijadom-infra my-monorepo
 cd my-monorepo
 pnpm install
 ```

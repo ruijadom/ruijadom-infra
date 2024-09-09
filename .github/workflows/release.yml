@@ -16,4 +16,5 @@ jobs:
         uses: google-github-actions/release-please-action@v3
         with:
           release-type: node
-          package-name: turbo-monorepo-template
+          package-name: ruijadom-infra
+          token: ${{ secrets.RUIJADOM_INFRA_ACCESS_TOKEN }}

@@ -7,6 +7,7 @@
     "url": "https://github.com/ruijadom/ruijadom-infra"
   },
   "scripts": {
+    "changeset": "changeset",
     "clean": "turbo run clean --no-daemon",
     "dev": "turbo run dev --no-daemon --concurrency=13",
     "build": "turbo run build --no-daemon",
@@ -29,6 +30,7 @@
     "*.{js,jsx,ts,tsx}": "eslint --cache --fix"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.27.1",
     "@commitlint/cli": "17.6.7",
     "@commitlint/config-conventional": "17.6.7",
     "@playwright/test": "1.36.1",

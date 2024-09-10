@@ -7,7 +7,6 @@
     "url": "https://github.com/ruijadom/ruijadom-infra"
   },
   "scripts": {
-    "changeset": "changeset",
     "clean": "turbo run clean --no-daemon",
     "dev": "turbo run dev --no-daemon --concurrency=13",
     "build": "turbo run build --no-daemon",
@@ -23,7 +22,10 @@
     "fix:prettier": "prettier --plugin-search-dir=. --write .",
     "fix": "run-s fix:*",
     "prepare": "husky install",
-    "analyze": "cross-env ANALYZE=true pnpm build"
+    "analyze": "cross-env ANALYZE=true pnpm build",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo build && changeset publish"
   },
   "lint-staged": {
     "*": "prettier --ignore-unknown --write",

@@ -5,7 +5,7 @@ const basePath = "/turbo-monorepo-template";
 test("has title", async ({ page }) => {
   await page.goto(basePath);
 
-  await expect(page).toHaveTitle("Markkos98 — Next.js & Tailwind CSS Monorepo Template");
+  await expect(page).toHaveTitle("Ruijadom — Next.js & Tailwind CSS Monorepo Template");
 });
 
 test("has heading", async ({ page }) => {

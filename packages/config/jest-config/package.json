@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@ruijadom/jest-config",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "devDependencies": {
     "@testing-library/jest-dom": "5.17.0",
     "jest-environment-jsdom": "29.6.1",

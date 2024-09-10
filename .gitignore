@@ -3,6 +3,7 @@
 .next/
 .swc/
 .turbo/
+.npmrc
 coverage/
 dist/
 e2e-report/

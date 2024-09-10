@@ -73,5 +73,5 @@ jobs:
           version: pnpm version:packages
           commit: "chore(release): version packages 🦋 [skip ci]"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.RUIJADOM_INFRA_ACCESS_TOKEN }}
           NPM_TOKEN: ${{ secrets.RUIJADOM_INFRA_ACCESS_TOKEN }}

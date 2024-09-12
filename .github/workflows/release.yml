@@ -49,6 +49,10 @@ jobs:
         id: build-the-mono-repo
         run: pnpm build
 
+      - name: 🔧 Configure npm
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.RUIJADOM_INFRA_ACCESS_TOKEN }}" > ~/.npmrc
+
       - name: 📋 Check Git Status
         run: git status
 

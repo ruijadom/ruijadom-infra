@@ -1,5 +1,4 @@
 {
-  "private": true,
   "name": "@ruijadom/eslint-config-custom",
   "version": "3.0.0",
   "main": "eslint.config.js",

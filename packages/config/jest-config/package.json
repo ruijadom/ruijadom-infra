@@ -1,5 +1,4 @@
 {
-  "private": true,
   "name": "@ruijadom/jest-config",
   "version": "3.0.0",
   "devDependencies": {

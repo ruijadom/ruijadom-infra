@@ -61,7 +61,7 @@ jobs:
         uses: changesets/action@v1
         with:
           title: "chore(release): version packages 🦋"
-          publish: pnpm publish --access public --registry=https://registry.npmjs.org/ --no-git-checks
+          publish: false
           version: pnpm version
           commit: "chore(release): version packages 🦋 [skip ci]"
         env:
@@ -70,11 +70,9 @@ jobs:
 
       - name: 🔄 Publish Individual Packages
         run: |
-          for package in $(pnpm -r exec echo \$PWD); do
-            cd $package
-            if [ -f package.json ]; then
-              pnpm publish --access public --registry=https://registry.npmjs.org/ --no-git-checks
-            fi
+          for package in $(pnpm -r exec -- json -f package.json -p 'name' | grep -v 'ruijadom-infra'); do
+            cd packages/$package
+            pnpm publish --access public --registry=https://registry.npmjs.org/ --no-git-checks
           done
         env:
           NPM_TOKEN: ${{ secrets.RUIJADOM_INFRA_ACCESS_TOKEN }}

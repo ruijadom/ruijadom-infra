@@ -12,5 +12,8 @@
     "@storybook/manager-api": "7.1.1",
     "@storybook/nextjs": "7.1.1",
     "@storybook/theming": "7.1.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

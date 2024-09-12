@@ -4,5 +4,8 @@
   "version": "3.0.0",
   "devDependencies": {
     "@tsconfig/strictest": "^2.0.5"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

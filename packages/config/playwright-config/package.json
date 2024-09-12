@@ -1,5 +1,4 @@
 {
-  "private": true,
   "name": "@ruijadom/playwright-config",
   "version": "3.0.0"
 }

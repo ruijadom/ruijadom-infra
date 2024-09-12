@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "ruijadom-infra",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/ruijadom/ruijadom-infra"
@@ -24,8 +24,8 @@
     "prepare": "husky install",
     "analyze": "cross-env ANALYZE=true pnpm build",
     "changeset": "changeset",
-    "publish:packages": "changeset publish",
-    "version:packages": "changeset version"
+    "version:packages": "changeset version",
+    "release:packages": "turbo build && changeset publish"
   },
   "lint-staged": {
     "*": "prettier --ignore-unknown --write",

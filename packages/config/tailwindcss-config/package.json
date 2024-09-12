@@ -1,10 +1,12 @@
 {
-  "private": true,
   "name": "@ruijadom/tailwindcss-config",
-  "version": "3.0.0",
+  "version": "0.0.0",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.45",
     "tailwindcss": "^3.4.10"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

@@ -1,7 +1,6 @@
 {
-  "private": true,
   "name": "@ruijadom/eslint-config-custom",
-  "version": "3.0.0",
+  "version": "0.0.0",
   "main": "eslint.config.js",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "5.62.0",
@@ -17,5 +16,8 @@
   },
   "devDependencies": {
     "eslint-config-custom": "^0.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

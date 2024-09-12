@@ -1,10 +1,12 @@
 {
-  "private": true,
   "name": "@ruijadom/jest-config",
-  "version": "3.0.0",
+  "version": "0.0.0",
   "devDependencies": {
     "@testing-library/jest-dom": "5.17.0",
     "jest-environment-jsdom": "29.6.1",
     "next": "13.4.12"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

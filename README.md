@@ -20,7 +20,7 @@ This is a monorepo template using:
 
 ## What's inside?
 
-This monorepo includes a few apps and packages.
+This monorepo includes a few apps and packages. The `apps` directory contains the Next.js apps, and the `packages` directory contains the shared packages. The `packages/config` directory contains the shared configurations.
 
 ### Apps and Packages
 

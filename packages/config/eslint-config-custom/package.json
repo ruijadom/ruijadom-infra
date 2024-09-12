@@ -17,5 +17,8 @@
   },
   "devDependencies": {
     "eslint-config-custom": "^0.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

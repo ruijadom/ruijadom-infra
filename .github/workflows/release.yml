@@ -49,6 +49,10 @@ jobs:
         id: build-the-mono-repo
         run: pnpm build
 
+      - name: 🔧 Configure npm
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.RUIJADOM_INFRA_ACCESS_TOKEN }}" > ~/.npmrc
+
       - name: 📋 Check Git Status
         run: git status
 
@@ -57,9 +61,20 @@ jobs:
         uses: changesets/action@v1
         with:
           title: "chore(release): version packages 🦋"
-          publish: pnpm publish --access public
+          publish: pnpm publish --access public --registry=https://registry.npmjs.org/ --no-git-checks
           version: pnpm version
           commit: "chore(release): version packages 🦋 [skip ci]"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.RUIJADOM_INFRA_ACCESS_TOKEN }}
+
+      - name: 🔄 Publish Individual Packages
+        run: |
+          for package in $(pnpm -r exec echo \$PWD); do
+            cd $package
+            if [ -f package.json ]; then
+              pnpm publish --access public --registry=https://registry.npmjs.org/ --no-git-checks
+            fi
+          done
+        env:
           NPM_TOKEN: ${{ secrets.RUIJADOM_INFRA_ACCESS_TOKEN }}

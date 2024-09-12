@@ -1,6 +1,6 @@
 {
   "name": "@ruijadom/tailwindcss-config",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.45",

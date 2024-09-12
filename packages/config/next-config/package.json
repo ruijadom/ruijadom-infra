@@ -1,6 +1,6 @@
 {
   "name": "@ruijadom/next-config",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "devDependencies": {
     "@next/bundle-analyzer": "13.4.12",
     "next-compose-plugins": "^2.2.1",
